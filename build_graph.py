@@ -73,5 +73,5 @@ for word in graph['nodes']:
 # Save it as JSON
 with open('graph.json', 'w') as f:
     additions = json.load(open(NODE_ADDITIONS))
-    graph['nodes'].append(additions)
+    graph['nodes'] += additions
     json.dump(graph, f, indent=2)
