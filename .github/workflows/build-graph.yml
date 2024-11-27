@@ -23,7 +23,7 @@ jobs:
         run: echo "NOW=$(date +'%Y-%m-%dT%H%M%S')" >> $GITHUB_ENV
         shell: bash
       - name: Create GH release
-        run: gh release create $NOW graph.json
+        run: gh release create $NOW graph.json spritesheet.png
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash

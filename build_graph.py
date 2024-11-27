@@ -1,11 +1,14 @@
 import csv
 import json
 import os
+from PIL import Image
 
 VOCAB_FILE = 'vocab.csv'
-ICONS_DIR = 'invicon/invicon'
+ICONS_DIR = 'invicon/invicon/'
 NODE_OVERRIDES = 'node_overrides.json'
 NODE_ADDITIONS = 'node_additions.json'
+
+SPRITE_SHEET_OUT = 'spritesheet.png'
 
 # Map icon file names to lowercase item names (not perfect, may contain misc. identifiers, like BE for Bedrock Edition)
 icons = {}
@@ -72,7 +75,21 @@ for word in graph['nodes']:
             word['icon'] = icons[f'oak {sense}']
             break
 
-# Save it as JSON
+# Write icons as a sprite sheet, so the web client doesn't have to request every
+# single one individually.
+# This will cause the node['icon'] to turn into the icon's index in the sprite sheet
+icon_nodes = [node for node in graph['nodes'] if 'icon' in node]
+sprite_sheet = Image.new('RGBA', (len(icon_nodes)*32, 32))
+
+for i, node in enumerate(icon_nodes):
+    icon = Image.open(ICONS_DIR + node['icon'])
+    icon = icon.resize((32, 32), resample=Image.Resampling.NEAREST)
+    sprite_sheet.paste(icon, (i * 32, 0))
+    node['icon'] = i
+
+sprite_sheet.save('./spritesheet.png')
+
+# Save graph as JSON
 with open('graph.json', 'w') as f:
     additions = json.load(open(NODE_ADDITIONS))
     graph['nodes'] += additions
