@@ -1,18 +1,6 @@
 {
   "nodes": [
     {
-      "id": "fred",
-      "def": "player name: Fred",
-      "sessionDocumented": "",
-      "etymologicalRoots": []
-    },
-    {
-      "id": "logan",
-      "def": "player name: Logan",
-      "sessionDocumented": "",
-      "etymologicalRoots": []
-    },
-    {
       "id": "dore",
       "def": "place",
       "sessionDocumented": "10/22",
@@ -80,7 +68,9 @@
       "id": "opasa",
       "def": "wood planks",
       "sessionDocumented": "10/22",
-      "etymologicalRoots": []
+      "etymologicalRoots": [
+        "opa"
+      ]
     },
     {
       "id": "opasafi",
@@ -148,9 +138,7 @@
       "id": "leko",
       "def": "stone, cobblestone",
       "sessionDocumented": "10/22",
-      "etymologicalRoots": [
-        "leko"
-      ],
+      "etymologicalRoots": [],
       "icon": "Invicon_Stone.png"
     },
     {
@@ -456,7 +444,9 @@
       "id": "asa",
       "def": "paper",
       "sessionDocumented": "10/29",
-      "etymologicalRoots": [],
+      "etymologicalRoots": [
+        "asu"
+      ],
       "icon": "Invicon_Paper.png"
     },
     {
@@ -634,7 +624,7 @@
     },
     {
       "id": "bokbok opa",
-      "def": "chicken product (feather, egg?)",
+      "def": "chicken product, egg(?), feather(?)",
       "sessionDocumented": "11/5",
       "etymologicalRoots": [
         "bokbok",
@@ -794,7 +784,9 @@
       "id": "wasa",
       "def": "sugar",
       "sessionDocumented": "11/12",
-      "etymologicalRoots": [],
+      "etymologicalRoots": [
+        "asa"
+      ],
       "icon": "Invicon_Sugar.png"
     },
     {
@@ -954,7 +946,9 @@
       "id": "u",
       "def": "or",
       "sessionDocumented": "11/19",
-      "etymologicalRoots": []
+      "etymologicalRoots": [
+        "i"
+      ]
     },
     {
       "id": "bz",
@@ -974,12 +968,13 @@
     },
     {
       "id": "bzbila",
-      "def": "bee hive",
+      "def": "beehive",
       "sessionDocumented": "11/19",
       "etymologicalRoots": [
         "bz",
         "bila"
-      ]
+      ],
+      "icon": "Invicon_Beehive.png"
     },
     {
       "id": "tisatinn",
@@ -990,6 +985,118 @@
         "tiin"
       ],
       "icon": "Invicon_Campfire.png"
+    },
+    {
+      "id": "chach",
+      "def": "door",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [],
+      "icon": "Invicon_Oak_Door.png"
+    },
+    {
+      "id": "naf",
+      "def": "side",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "cretemuplosa",
+      "def": "haybale",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [
+        "crete",
+        "muplo"
+      ]
+    },
+    {
+      "id": "pira",
+      "def": "short, small",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "bron",
+      "def": "big, tall",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "bogan",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "ched",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "rabu",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "i'i",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "brogoye",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [
+        "bron",
+        "goye"
+      ]
+    },
+    {
+      "id": "piragoye",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [
+        "pira",
+        "goye"
+      ]
+    },
+    {
+      "id": "hamor",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
+    },
+    {
+      "id": "rucha bila",
+      "def": "lectern",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [],
+      "icon": "Invicon_Lectern.png"
+    },
+    {
+      "id": "gilon waa",
+      "def": "go by boat, boat",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [
+        "gilon",
+        "waa"
+      ],
+      "icon": "Invicon_Boat.png"
+    },
+    {
+      "id": "lorgbilaopa",
+      "def": "ender pearl",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": [],
+      "icon": "Invicon_Ender_Pearl.png"
+    },
+    {
+      "id": "brilekota",
+      "def": "?",
+      "sessionDocumented": "11/26",
+      "etymologicalRoots": []
     },
     [
       {
@@ -1006,16 +1113,16 @@
   ],
   "links": [
     {
+      "source": "opa",
+      "target": "opasa"
+    },
+    {
       "source": "opasa",
       "target": "opasafi"
     },
     {
       "source": "leko",
       "target": "kigleko"
-    },
-    {
-      "source": "leko",
-      "target": "leko"
     },
     {
       "source": "leko",
@@ -1112,6 +1219,10 @@
     {
       "source": "tisa",
       "target": "giro tisa"
+    },
+    {
+      "source": "asu",
+      "target": "asa"
     },
     {
       "source": "lorg",
@@ -1286,6 +1397,10 @@
       "target": "crete muplo"
     },
     {
+      "source": "asa",
+      "target": "wasa"
+    },
+    {
       "source": "crete",
       "target": "crete liga"
     },
@@ -1350,6 +1465,10 @@
       "target": "ida boga"
     },
     {
+      "source": "i",
+      "target": "u"
+    },
+    {
       "source": "bz",
       "target": "bzoga"
     },
@@ -1372,6 +1491,38 @@
     {
       "source": "tiin",
       "target": "tisatinn"
+    },
+    {
+      "source": "crete",
+      "target": "cretemuplosa"
+    },
+    {
+      "source": "muplo",
+      "target": "cretemuplosa"
+    },
+    {
+      "source": "bron",
+      "target": "brogoye"
+    },
+    {
+      "source": "goye",
+      "target": "brogoye"
+    },
+    {
+      "source": "pira",
+      "target": "piragoye"
+    },
+    {
+      "source": "goye",
+      "target": "piragoye"
+    },
+    {
+      "source": "gilon",
+      "target": "gilon waa"
+    },
+    {
+      "source": "waa",
+      "target": "gilon waa"
     }
   ]
 }

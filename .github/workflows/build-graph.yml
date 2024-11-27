@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Build resource pack
+      - name: Build graph
         run: ${PWD}/make_graph.sh
       - name: Set current date as env variable
         run: echo "NOW=$(date +'%Y-%m-%dT%H%M%S')" >> $GITHUB_ENV
