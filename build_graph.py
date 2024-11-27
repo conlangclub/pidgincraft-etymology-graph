@@ -51,6 +51,8 @@ for word in vocab_csv:
 
 # Resolve icons for words if possible
 for word in graph['nodes']:
+    if 'icon' in word: continue
+
     for sense in word['def'].replace(';', ',').split(','):
         sense = sense.lower().strip()
 
