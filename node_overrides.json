@@ -1,0 +1,20 @@
+{
+  "giro-leko": {
+    "icon": "Invicon_Stone_Pickaxe.png"
+  },
+  "gilon": {
+    "icon": "Invicon_Water_Bucket.png"
+  },
+  "tisagilon": {
+    "icon": "Invicon_Lava_Bucket.png"
+  },
+  "kigleko": {
+    "icon": "Invicon_Copper_Ingot.png"
+  },
+  "kigleko": {
+    "icon": "Invicon_Iron_Ingot.png"
+  },
+  "aloza": {
+    "icon": "Invicon_Red_Bed.png"
+  }
+}

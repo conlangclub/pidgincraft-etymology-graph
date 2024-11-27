@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fred",
+    "def": "Fred (player)",
+    "sessionDocumented": "10/22"
+  },
+  {
+    "id": "logan",
+    "def": "Logan (player)",
+    "sessionDocumented": "10/22"
+  }
+]

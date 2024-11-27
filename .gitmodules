@@ -1,0 +1,3 @@
+[submodule "invicon"]
+	path = invicon
+	url = https://github.com/fechan/mc-invicons.git
