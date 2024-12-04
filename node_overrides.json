@@ -1,12 +1,15 @@
 {
-  "giro-leko": {
+  "giroleko": {
     "icon": "Invicon_Stone_Pickaxe.png"
   },
-  "giro-opa": {
+  "giroopa": {
     "icon": "Invicon_Stone_Axe.png"
   },
-  "giro-crete": {
+  "girocrete": {
     "icon": "Invicon_Stone_Hoe.png"
+  },
+  "girogat": {
+    "icon": "Invicon_Stone_Sword.png"
   },
   "gilon": {
     "icon": "Invicon_Water_Bucket.png"
