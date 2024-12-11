@@ -25,7 +25,7 @@ jobs:
       - name: Build graph
         run: ${PWD}/make_graph.sh
       - name: Upload artifact
-        uses: actions/upload-pages-artifect@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: build/
 
