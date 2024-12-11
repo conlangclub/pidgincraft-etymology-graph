@@ -87,10 +87,10 @@ for i, node in enumerate(icon_nodes):
     sprite_sheet.paste(icon, (i * 32, 0))
     node['icon'] = i
 
-sprite_sheet.save('./spritesheet.png')
+sprite_sheet.save('./build/spritesheet.png')
 
 # Save graph as JSON
-with open('graph.json', 'w') as f:
+with open('./build/graph.json', 'w') as f:
     additions = json.load(open(NODE_ADDITIONS))
     graph['nodes'] += additions
     json.dump(graph, f, indent=2)

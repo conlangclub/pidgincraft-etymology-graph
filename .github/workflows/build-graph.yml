@@ -24,11 +24,19 @@ jobs:
       
       - name: Build graph
         run: ${PWD}/make_graph.sh
-      - name: Set current date as env variable
-        run: echo "NOW=$(date +'%Y-%m-%dT%H%M%S')" >> $GITHUB_ENV
-        shell: bash
-      - name: Create GH release
-        run: gh release create $NOW graph.json spritesheet.png
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: bash
+      - name: Upload artifact
+        uses: actions/upload-pages-artifect@v3
+        with:
+          path: build/
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
